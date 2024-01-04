@@ -1,0 +1,29 @@
+mediawikiUser: wikiadmin
+mediawikiName: Scouthistoria Wiki
+mediawikiHost: scouthistoria.dev.scoutapp.se
+mediawikiEmail: scouthistoria@scouterna.se
+
+image:
+  registry: ghcr.io
+  repository: scouterna/scouthistoria-wiki
+  tag: main
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+
+ingress:
+  ingressClassName: nginx
+  enabled: true
+  hostname: "https://scouthistoria.dev.scoutapp.se"
+  tls: true
+  pathType: Prefix
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt
+    nginx.ingress.kubernetes.io/backend-protocol: http
+
+livenessProbe:
+  enabled: false
+readinessProbe:
+  enabled: false
