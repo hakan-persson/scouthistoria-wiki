@@ -1,0 +1,21 @@
+wfLoadExtension( 'VisualEditor' );
+wfLoadExtension( 'WikiEditor' );
+wfLoadExtension( 'Nuke' );
+wfLoadExtension( 'ReplaceText' );
+wfLoadExtension( 'InputBox' );
+wfLoadExtension( 'ParserFunctions' );
+
+wfLoadExtension( 'Elastica' );
+wfLoadExtension( 'MsUpload' );
+wfLoadExtension( 'intersection' );
+# wfLoadExtension( 'PluggableAuth' );
+# wfLoadExtension( 'OpenIDConnect' );
+# wfLoadExtension( 'SimpleSAMLphp' );
+wfLoadExtension( 'VEForAll' );
+wfLoadExtension( 'HeaderTabs' );
+wfLoadExtension( 'Lockdown' );
+wfLoadExtension( 'LabeledSectionTransclusion' );
+wfLoadExtension( 'PageForms' );
+
+wfLoadExtension( 'SemanticMediaWiki' );
+wfLoadExtension( 'SemanticResultFormats' );
