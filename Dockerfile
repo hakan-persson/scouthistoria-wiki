@@ -33,4 +33,4 @@ RUN cd /opt/bitnami/mediawiki && \
     composer -q -n update --no-dev
 
 ## Add some more stuff to the file system
-COPY rootfs /
+# COPY rootfs /
