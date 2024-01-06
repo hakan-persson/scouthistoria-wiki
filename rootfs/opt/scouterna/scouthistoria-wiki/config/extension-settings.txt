@@ -17,5 +17,5 @@ wfLoadExtension( 'Lockdown' );
 wfLoadExtension( 'LabeledSectionTransclusion' );
 wfLoadExtension( 'PageForms' );
 
-wfLoadExtension( 'SemanticMediaWiki' );
-wfLoadExtension( 'SemanticResultFormats' );
+# wfLoadExtension( 'SemanticMediaWiki' );
+# wfLoadExtension( 'SemanticResultFormats' );

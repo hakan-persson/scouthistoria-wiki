@@ -17,5 +17,5 @@ set -o nounset
 cat /opt/scouterna/scouthistoria-wiki/config/extension-settings.txt >> "$MEDIAWIKI_CONF_FILE"
 
 # Update DB with Semantic stuff
-cd /opt/bitnami/mediawiki/extensions/SemanticMediaWiki/maintenance
-MW_INSTALL_PATH="/opt/bitnami/mediawiki" php setupStore.php
+# cd /opt/bitnami/mediawiki/extensions/SemanticMediaWiki/maintenance
+# MW_INSTALL_PATH="/opt/bitnami/mediawiki" php setupStore.php
