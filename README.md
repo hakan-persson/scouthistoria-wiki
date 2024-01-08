@@ -1,4 +1,5 @@
 # Scouthistoria wiki
+
 This repo contains a Docker file to build a pre-configured Scouthistoria Mediawiki image. It is based on the https://hub.docker.com/r/bitnami/mediawiki container (source at https://github.com/bitnami/containers/tree/main/bitnami/mediawiki).
 
 The deployments options are the same as the Bitnami container.
