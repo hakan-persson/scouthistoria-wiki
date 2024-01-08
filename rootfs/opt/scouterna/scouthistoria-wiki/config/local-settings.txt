@@ -1,3 +1,19 @@
+# Use Swedish interface as default
+$wgLanguageCode = "sv";
+
+# Disable anonymous editing
+$wgGroupPermissions['*']['edit'] = false;
+# Prevent new user registrations except by sysops
+$wgGroupPermissions['*']['createaccount'] = false;
+# Allow autocreation when using external authentication scource
+$wgGroupPermissions['*']['autocreateaccount'] = true;
+
+# SAMS logo
+$wgLogos = [
+        '1x' => "$wgResourceBasePath/images/sams.png",
+        'icon' => "$wgResourceBasePath/images/sams.png",
+];
+
 # Enable installed extensions
 wfLoadExtension( 'VisualEditor' );
 wfLoadExtension( 'WikiEditor' );

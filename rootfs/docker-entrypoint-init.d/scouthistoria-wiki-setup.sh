@@ -11,5 +11,5 @@ set -o nounset
 . /opt/bitnami/scripts/liblog.sh
 
 info "** Starting scouthistoria wiki setup **"
-/opt/scouterna/scouthistoria-wiki/scripts/setup.sh
+/opt/scouterna/scouthistoria-wiki/config/setup.sh
 info "** scouthistoria wiki setup finished! **"

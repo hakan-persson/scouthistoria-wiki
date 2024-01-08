@@ -1,5 +1,5 @@
 mediawikiUser: wikiadmin
-mediawikiName: Scouthistoria Wiki
+mediawikiName: Scouthistoria
 mediawikiHost: scouthistoria.dev.scoutapp.se
 mediawikiEmail: scouthistoria@scouterna.se
 mediawikiPassword: ""   # Empty at installation. Must contain the current value when upgrading.
@@ -10,6 +10,8 @@ image:
   repository: scouterna/scouthistoria-wiki
   tag: main
   pullPolicy: Always
+  pullSecrets:
+    - ghcr-pull-secret
 
 mariadb:
   auth:
