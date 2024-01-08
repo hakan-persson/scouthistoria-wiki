@@ -2,6 +2,8 @@ mediawikiUser: wikiadmin
 mediawikiName: Scouthistoria Wiki
 mediawikiHost: scouthistoria.dev.scoutapp.se
 mediawikiEmail: scouthistoria@scouterna.se
+mediawikiPassword: ""   # Empty at installation. Must contain the current value when upgrading.
+allowEmptyPassword: no
 
 image:
   registry: ghcr.io
@@ -9,13 +11,18 @@ image:
   tag: main
   pullPolicy: Always
 
+mariadb:
+  auth:
+    rootPassword: ""   # Empty at installation. Must contain the current value when upgrading.
+    password: ""   # Empty at installation. Must contain the current value when upgrading.
+
 service:
   type: ClusterIP
 
 ingress:
   ingressClassName: nginx
   enabled: true
-  hostname: "https://scouthistoria.dev.scoutapp.se"
+  hostname: scouthistoria.dev.scoutapp.se
   tls: true
   pathType: Prefix
   annotations:

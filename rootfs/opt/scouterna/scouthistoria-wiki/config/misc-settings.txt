@@ -1,1 +1,7 @@
+# Use Swedish interface as default
 $wgLanguageCode = "sv";
+
+# Disable anonymous editing
+$wgGroupPermissions['*']['edit'] = false;
+# Prevent new user registrations except by sysops
+$wgGroupPermissions['*']['createaccount'] = false;

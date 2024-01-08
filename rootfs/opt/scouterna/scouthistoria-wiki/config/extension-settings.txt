@@ -1,3 +1,4 @@
+# Enable installed extensions
 wfLoadExtension( 'VisualEditor' );
 wfLoadExtension( 'WikiEditor' );
 wfLoadExtension( 'Nuke' );
