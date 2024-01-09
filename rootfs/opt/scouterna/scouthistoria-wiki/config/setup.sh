@@ -13,6 +13,16 @@ set -o nounset
 # Load library with logging functions
 . /opt/bitnami/scripts/liblog.sh
 
+# Update LocalSettings.php file with our settings
+cat /opt/scouterna/scouthistoria-wiki/config/local-settings.txt >> "$MEDIAWIKI_CONF_FILE"
+
+# Copy logo to the right place
+cp /opt/scouterna/scouthistoria-wiki/images/sams.png $MEDIAWIKI_BASE_DIR/images/sams.png
+
+# Update DB with Semantic stuff
+# cd /opt/bitnami/mediawiki/extensions/SemanticMediaWiki/maintenance
+# MW_INSTALL_PATH="/opt/bitnami/mediawiki" php setupStore.php
+
 # Create a init bot user
 cd /opt/bitnami/mediawiki
 BOT_PWD=$(cat /dev/urandom | tr -dc '[:digit:]' | fold -w ${1:-32} | head -n 1)

@@ -12,7 +12,7 @@ USER 1001
 ## Install some more Mediawiki extension from here: https://extdist.wmflabs.org/dist/extensions/
 RUN cd /opt/bitnami/mediawiki/extensions && \
     curl -s -L https://extdist.wmflabs.org/dist/extensions/Elastica-REL1_41-324bd77.tar.gz | tar -xzf - && \
-    curl -s -L https://extdist.wmflabs.org/dist/extensions/MsUpload-REL1_41-bf77716.tar.gz | tar -xzf - && \
+    curl -s -L https://extdist.wmflabs.org/dist/extensions/MsUpload-REL1_41-bce204c.tar.gz | tar -xzf - && \
     curl -s -L https://extdist.wmflabs.org/dist/extensions/intersection-REL1_41-b29681a.tar.gz | tar -xzf - && \
     curl -s -L https://extdist.wmflabs.org/dist/extensions/PluggableAuth-REL1_41-0273c84.tar.gz | tar -xzf - && \
     curl -s -L https://extdist.wmflabs.org/dist/extensions/OpenIDConnect-REL1_41-7aa039e.tar.gz | tar -xzf - && \

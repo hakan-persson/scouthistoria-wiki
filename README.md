@@ -15,7 +15,8 @@ helm install scouthistoria-wiki bitnami/mediawiki --repo https://charts.bitnami.
 
 It's is also possible to use other tools that support Helm, i.e., Portainer, to install the Wiki. 
 
-## Upgrading
+## Upgrading (incomplete)
+
 https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues/#credential-errors-while-upgrading-chart-releases<br/>
 
 'mediawikiPassword' must not be empty, please add '--set mediawikiPassword=$MEDIAWIKI_PASSWORD' to the command. To get the current value:<br/>
